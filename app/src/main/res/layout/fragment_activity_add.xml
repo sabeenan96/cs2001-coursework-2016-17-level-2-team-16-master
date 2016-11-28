@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.project.group16.magicalbudget.ActivityAddFragment"
+    tools:showIn="@layout/activity_add">
+
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Amount (£)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText2" />
+
+
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:layout_marginTop="40dp"
+            android:inputType="textCapWords"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:background="#2e2eb8"
+            android:id="@+id/datePicker" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginTop="20dp"
+            android:text="Category"/>
+
+        <CheckBox
+            android:id="@+id/travel_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Travel"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/food_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Food"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/bills_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Bills"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/clothing_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Clothing"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/social_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Social"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/toiletries_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Toiletries"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/other_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Other"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/plus_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="+"
+            android:textSize="16sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="225dp"
+            android:onClick="submitOrder"
+            android:text="Continue" />
+    </LinearLayout>
+</ScrollView>
+
